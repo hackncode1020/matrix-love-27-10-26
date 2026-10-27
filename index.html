@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Matrix Love 💚 — Hacker's way to say I love you</title>
+<meta name="description" content="Code rain turns into a glowing heart and says I LOVE YOU. Made by @hack.n.code">
+<meta property="og:title" content="Someone sent you a secret message 💚">
+<meta property="og:description" content="Decrypt it — Matrix Love by @hack.n.code">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="boot" class="mono"></div>
+<div id="under">
+  <div id="forline" class="mono">For you</div>
+  <div id="hint" class="mono">tap the heart ♥</div>
+</div>
+<div id="btns">
+  <button id="share" class="btn primary">Share 💚</button>
+  <button id="make" class="btn">Make yours ✍️</button>
+</div>
+<a id="foot" class="mono" href="https://www.instagram.com/hack.n.code/" target="_blank" rel="noopener">Made by @hack.n.code</a>
+
+<div id="sheet" class="hidden">
+  <div class="card">
+    <div class="ttl mono">&gt; make_your_own.sh</div>
+    <label class="mono">Their name<input id="inName" maxlength="20" placeholder="e.g. My love"></label>
+    <label class="mono">Message<input id="inMsg" maxlength="14" placeholder="I LOVE YOU"></label>
+    <div class="row">
+      <button id="getLink" class="btn primary">Copy / share link 🔗</button>
+      <button id="close" class="btn">Close</button>
+    </div>
+    <div id="out" class="mono"></div>
+  </div>
+</div>
+<div id="toast" class="mono"></div>
+<script src="script.js"></script>
+</body>
+</html>
